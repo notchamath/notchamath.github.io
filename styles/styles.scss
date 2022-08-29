@@ -65,18 +65,35 @@ section{
 .sec2{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: green;
 } 
 .sec3{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: red;
 } 
 .sec4{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: blue;
 } 
 .sec5{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: yellow;
+}
+
+.active{
+    display: block;
+    animation: pageScale 1s ease-in-out;
+    
+    @keyframes pageScale  {
+        0%{
+            transform: translateY(-100%) scaleY(0);
+        }100%{
+            transform: translateY(0) scaleY(1);
+        }
+    }
 }
 
 

@@ -21,14 +21,6 @@ function PageTransitions(){
         const id = e.target.dataset.id;
 
         if(id){
-            
-            // // adding 'active' class to the selected btn and removing the class from the rest
-            // sectBtn.forEach((btn) => {
-            //     btn.classList.remove('active');
-            // });
-            // e.target.classList.add('active');
-
-            // adding 'active' class to the selected section and removing the class from the rest
             sections.forEach((section) => {
                 section.classList.remove('active');
             });
@@ -36,6 +28,13 @@ function PageTransitions(){
             element.classList.add('active');
         }
     });
+
+    // toggle theme
+    const themeBtn = document.querySelector('.theme-btn');
+    themeBtn.addEventListener('click', () =>{
+        let element = document.body;
+        element.classList.toggle('light-mode');
+    })
 }
 
 PageTransitions();

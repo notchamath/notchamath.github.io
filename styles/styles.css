@@ -53,7 +53,7 @@ a {
 }
 
 header {
-  height: 100vh;
+  min-height: 100vh;
   color: var(--color-white);
   overflow: hidden;
 }
@@ -184,7 +184,7 @@ section {
 .header-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  height: 100%;
+  min-height: 100vh;
 }
 .header-content .left-header {
   display: flex;
@@ -575,6 +575,7 @@ section {
 }
 .contact-content-con .right-contact .input-control .email, .contact-content-con .right-contact .input-control .subject, .contact-content-con .right-contact .input-control .message, .contact-content-con .right-contact .input-control .fname, .contact-content-con .right-contact .input-control .lname {
   flex-grow: 1;
+  flex-shrink: 1;
 }
 .contact-content-con .right-contact .input-control .fname {
   margin-right: 1rem;
@@ -653,4 +654,78 @@ section {
   transform: translate(-50%, -50%);
   font-weight: 800;
   font-size: 6.3rem;
+}
+
+@media screen and (max-width: 1432px) {
+  header {
+    padding: 0;
+  }
+  header .right-header {
+    padding: 0 !important;
+  }
+  .theme-btn {
+    width: 50px;
+    height: 50px;
+  }
+  .header-content, .timeline, .projects {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+  .right-header {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .right-header .name {
+    font-size: 2.5rem !important;
+  }
+  .header-content .left-header .image {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+  .about-container .right-about {
+    grid-template-columns: 1fr;
+    padding-top: 2.5rem;
+  }
+  .about-container .left-about {
+    padding-right: 0;
+  }
+  .about-container .left-about p {
+    padding-left: 0;
+  }
+  .about-stats .progress-bars {
+    grid-template-columns: 1fr;
+  }
+  .contact-content-con {
+    flex-direction: column;
+  }
+  .contact-content-con .right-contact {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+  .contact-content-con .right-contact .input-control {
+    flex-direction: column;
+  }
+  .contact-content-con .right-contact .input-control .fname {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+  .section {
+    padding: 2rem;
+  }
+  .controls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey-5);
+  }
+  .controls .control {
+    margin: 1rem 0.3rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

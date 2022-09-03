@@ -15,20 +15,6 @@ function PageTransitions(){
         });
     }
 
-    //change page
-    allSections.addEventListener('click', (e) => {
-
-        const id = e.target.dataset.id;
-
-        if(id){
-            sections.forEach((section) => {
-                section.classList.remove('active');
-            });
-            const element = document.getElementById(id);
-            element.classList.add('active');
-        }
-    });
-
     // toggle theme
     const themeBtn = document.querySelector('.theme-btn');
     themeBtn.addEventListener('click', () =>{

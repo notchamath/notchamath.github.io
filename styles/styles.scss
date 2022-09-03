@@ -69,12 +69,8 @@ section{
     min-height: 100vh;
     padding: 3rem 18rem;
     scroll-snap-align: center;
-}
-
-.section{
     background-color: var(--color-primary);
 }
-
 
 // controls
 .controls{
@@ -90,7 +86,6 @@ section{
 
     .control.active-btn{
         background-color: var(--color-secondary);
-        // transform: var(--trans-1);
 
         i{
             color: var(--color-black);

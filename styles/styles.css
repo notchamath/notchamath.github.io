@@ -67,9 +67,6 @@ section {
   min-height: 100vh;
   padding: 3rem 18rem;
   scroll-snap-align: center;
-}
-
-.section {
   background-color: var(--color-primary);
 }
 

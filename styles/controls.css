@@ -47,6 +47,7 @@
   border-radius: 30px;
   border: 3px solid var(--color-secondary);
   overflow: hidden;
+  transition: var(--trans-1);
 }
 .main-btn-container .main-btn .btn-text {
   padding: 0 2rem;
@@ -61,7 +62,6 @@
 }
 .main-btn-container .main-btn:hover {
   background-color: var(--color-secondary);
-  transition: var(--trans-1);
 }
 
 .theme-btn {

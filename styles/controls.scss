@@ -54,6 +54,7 @@
         border-radius: 30px;
         border: 3px solid var(--color-secondary);
         overflow: hidden;
+        transition: var(--trans-1);
     
         .btn-text{
             padding: 0 2rem;
@@ -66,13 +67,11 @@
             padding: 1rem;
             border-radius: 50%;
             background-color: var(--color-secondary);
-
         }
     }
     
     .main-btn:hover{
         background-color: var(--color-secondary);
-        transition: var(--trans-1);
     }
 }
 

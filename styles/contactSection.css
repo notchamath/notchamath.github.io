@@ -1,0 +1,163 @@
+.contact-content-con {
+  display: flex;
+  padding-top: 3.5rem;
+}
+.contact-content-con .left-contact {
+  flex: 2;
+}
+.contact-content-con .left-contact h4 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.contact-content-con .left-contact p {
+  margin: 1rem 0;
+  line-height: 2rem;
+}
+.contact-content-con .left-contact .contact-info .contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-content-con .left-contact .contact-info .contact-item p {
+  margin: 0.3rem 0 !important;
+  padding: 0 !important;
+}
+.contact-content-con .left-contact .contact-info .contact-item .icon {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  align-items: center;
+}
+.contact-content-con .left-contact .contact-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.contact-content-con .left-contact .contact-icons a {
+  display: flex;
+  align-items: center;
+  color: var(--color-white);
+  background-color: var(--color-grey-5);
+  cursor: pointer;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 0.4rem;
+}
+.contact-content-con .left-contact .contact-icons a:hover {
+  background-color: var(--color-secondary);
+}
+.contact-content-con .left-contact .contact-icons a:hover i {
+  color: var(--color-primary);
+}
+.contact-content-con .left-contact .contact-icons a i {
+  font-size: 2.6rem;
+  color: var(--color-white);
+  margin: 0 1rem;
+}
+.contact-content-con .right-contact {
+  flex: 3;
+  margin-left: 3rem;
+}
+.contact-content-con .right-contact .input-control {
+  display: flex;
+  margin: 1.5rem 0;
+  width: 100%;
+}
+.contact-content-con .right-contact .input-control input, .contact-content-con .right-contact .input-control textarea {
+  border-radius: 30px;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.8rem 1.1rem;
+  outline: none;
+  border: none;
+  background-color: var(--color-grey-5);
+  resize: none;
+}
+.contact-content-con .right-contact .input-control .email, .contact-content-con .right-contact .input-control .subject, .contact-content-con .right-contact .input-control .message, .contact-content-con .right-contact .input-control .fname, .contact-content-con .right-contact .input-control .lname {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.contact-content-con .right-contact .input-control .fname {
+  margin-right: 1rem;
+}
+.contact-content-con .right-contact .submit-btn {
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 1432px) {
+  header {
+    padding: 0;
+  }
+  header .right-header {
+    padding: 0 !important;
+  }
+  .theme-btn {
+    width: 50px;
+    height: 50px;
+  }
+  .header-content, .timeline, .projects {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+  .right-header {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .right-header .name {
+    font-size: 2.5rem !important;
+  }
+  .header-content .left-header .image {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+  .about-container .right-about {
+    grid-template-columns: 1fr;
+    padding-top: 2.5rem;
+  }
+  .about-container .left-about {
+    padding-right: 0;
+  }
+  .about-container .left-about p {
+    padding-left: 0;
+  }
+  .about-stats .progress-bars {
+    grid-template-columns: 1fr;
+  }
+  .contact-content-con {
+    flex-direction: column;
+  }
+  .contact-content-con .right-contact {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+  .contact-content-con .right-contact .input-control {
+    flex-direction: column;
+  }
+  .contact-content-con .right-contact .input-control .fname {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+  .section {
+    padding: 2rem;
+  }
+  .controls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey-5);
+  }
+  .controls .control {
+    margin: 1rem 0.3rem;
+  }
+}/*# sourceMappingURL=contactSection.css.map */

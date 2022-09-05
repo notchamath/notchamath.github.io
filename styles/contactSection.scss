@@ -1,0 +1,115 @@
+
+//Contact section styles
+.contact-content-con{
+    display: flex;
+    padding-top: 3.5rem;
+
+    .left-contact{
+        flex: 2; 
+
+        h4{
+            margin-top: 1rem;
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+
+        p{
+            margin: 1rem 0;
+            line-height: 2rem;
+        }
+
+        .contact-info{
+
+            .contact-item{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                p{
+                    margin: .3rem 0 !important;
+                    padding: 0 !important;
+                }
+
+                .icon{
+                    display: grid;
+                    grid-template-columns: 30px 1fr;
+                    align-items: center;
+                }
+            }
+        }
+
+        .contact-icons{
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+
+            a{
+                display: flex;
+                align-items: center;
+                color: var(--color-white);
+                background-color: var(--color-grey-5);
+                cursor: pointer;
+                justify-content: center;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                margin: 0 .4rem;
+                // transition: var(--trans-1);
+
+                &:hover{
+                    background-color: var(--color-secondary);
+
+                    i{
+                        color: var(--color-primary);
+                    }
+                }
+
+                i{
+                    font-size: 2.6rem;
+                    color: var(--color-white);
+                    margin: 0 1rem;
+                }
+            }
+        }
+    }
+
+    .right-contact{
+        flex: 3;
+        margin-left: 3rem;
+
+        .input-control{
+            display: flex;
+            margin: 1.5rem 0;
+            width: 100%;
+            
+            input, textarea{
+                border-radius: 30px;
+                font-weight: inherit;
+                font-size: inherit;
+                font-family: inherit;
+                padding: .8rem 1.1rem;
+                outline: none;
+                border: none;
+                background-color: var(--color-grey-5);
+                resize: none;
+            }
+            
+            .email, .subject, .message, .fname, .lname{
+                flex-grow: 1;
+                flex-shrink: 1;
+            }
+
+            .fname{
+                margin-right: 1rem;
+            }
+
+        }
+
+        .submit-btn{
+            display: flex;
+            justify-content: flex-start;
+        }
+    }
+}
+
+@import './media';

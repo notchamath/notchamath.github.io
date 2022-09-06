@@ -1,9 +1,4 @@
-const sections = document.querySelectorAll('.section');
-const sectBtns = document.querySelectorAll('.controls');
-const sectBtn = document.querySelectorAll('.control');
-const allSections = document.querySelector('.main-content');
-
-function PageTransitions(){
+function themeTransitions(){
 
     // toggle theme
     const themeBtn = document.querySelector('.theme-btn');
@@ -13,4 +8,11 @@ function PageTransitions(){
     })
 }
 
-PageTransitions();
+themeTransitions();
+
+
+function imageTransition(){
+
+}
+
+imageTransition();

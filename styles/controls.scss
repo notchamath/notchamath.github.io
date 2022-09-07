@@ -43,11 +43,12 @@
 .main-btn-container{
     display: flex;
     align-self: flex-start;
-
+    
     .main-btn{
         position: relative;
         display: flex;
         align-items: center;
+        flex-shrink: 0;
     
         color: inherit;
         font-weight: 600;

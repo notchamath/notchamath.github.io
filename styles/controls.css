@@ -33,6 +33,19 @@
 .controls .control:hover i {
   color: var(--color-black);
 }
+.controls .control:hover .tooltip {
+  display: block;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  text-align: center;
+  right: 110%;
+  padding: 0 8px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
 
 .main-btn-container {
   display: flex;
@@ -86,6 +99,11 @@
   font-size: 1.4rem;
   color: var(--color-grey-2);
   pointer-events: none;
+}
+
+.theme-btn:hover .tooltip {
+  display: block;
+  width: 11ch;
 }
 
 @media screen and (max-width: 1432px) {

@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bed470160d.js" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/controls.css">
     <link rel="stylesheet" href="styles/header.css">
@@ -23,17 +24,34 @@
     <header id="home">
         <div class="header-content">
             <div class="left-header">
-                <div class="image">
+                <div class="image" data-tilt>
                     <img src="images/ProfilePic.jpeg" alt="Author's Photo">
                 </div>
             </div>
             <div class="right-header">
                 <h1 class="name">
-                    Hi, My name is <span>Chamath Jayarathne</span> & I'm a Web Developer
+                    Hi, My name is <br><span>Chamath Jayarathne</span> <br>& I'm a Software Developer
                 </h1>
                 <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas qui illum praesentium aut ad necessitatibus quis, totam accusamus, minus consequatur dignissimos deserunt assumenda itaque magni cupiditate, incidunt eligendi eius dolor!
+                    First-generation immigrant originally from Sri Lanka <span class="fi fi-lk"></span> dsdsd
                 </p>
+                <div class="contact-icons">
+                    <a href="https://dreamsfromcode.com" target="_blank">
+                        <i class="fa-solid fa-newspaper"></i>
+                    </a>
+                    <a href="https://github.com/notchamath" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
                 <div class="btns">
                     <div class="main-btn-container">
                         <a href="#portfolio" class="main-btn">
@@ -148,6 +166,14 @@
                     <img src="images/icons/expressJS.png" alt="">
                     <h5>ExpressJS</h5>
                 </div>
+                <div class="skill">
+                    <img src="images/icons/C++.png" alt="">
+                    <h5>C++</h5>
+                </div>
+                <div class="skill">
+                    <img src="images/icons/NextJS.png" alt="">
+                    <h5>Next.js</h5>
+                </div>
                 
              </div>
         </div>
@@ -162,85 +188,58 @@
         
         <div class="projects">
 
-            <div class="portfolio-item">
-                <div class="image">
-                    <img src="images/port1.jpg" alt="">
+            <div class="portfolio-item" data-tilt data-tilt-glare="true" data-tilt-max-glare="0.3">
+                <div class="proj-image">
+                    <img src="images/port1.jpg" alt="Screenshot of Project 1">
                 </div>
-                <div class="hover-item">
-                    <h3>Project Source</h3>
-                    <div class="icons">
+                <div class="proj-info">
+                    <h2>01</h2>
+                    <h3>This Website</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim expedita dolorem quaerat dolorum ipsum architecto provident laboriosam, esse corporis! Porro repellendus distinctio explicabo quasi consectetur id amet quos doloribus quam?</p>
+                    <div class="proj-btns">
                         <a href="https://google.com" class="icon" target="_blank">
-                            <i class="fa-brands fa-github"></i>
+                            GitHub <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://google.com" class="icon" target="_blank">
+                            Live Site <i class="fa-solid fa-circle-chevron-right"></i>
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div class="portfolio-item">
-                <div class="image">
-                    <img src="images/port2.jpg" alt="">
+            <div class="portfolio-item" data-tilt data-tilt-glare="true" data-tilt-max-glare="0.3">
+                <div class="proj-image">
+                    <img src="images/port2.jpg" alt="Screenshot of Project 2">
                 </div>
-                <div class="hover-item">
-                    <h3>Project Source</h3>
-                    <div class="icons">
+                <div class="proj-info">
+                    <h2>02</h2>
+                    <h3>This Website</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim expedita dolorem quaerat dolorum ipsum architecto provident laboriosam, esse corporis! Porro repellendus distinctio explicabo quasi consectetur id amet quos doloribus quam?</p>
+                    <div class="proj-btns">
                         <a href="https://google.com" class="icon" target="_blank">
-                            <i class="fa-brands fa-github"></i>
+                            GitHub <i class="fa-brands fa-github"></i>
                         </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio-item">
-                <div class="image">
-                    <img src="images/port3.jpg" alt="">
-                </div>
-                <div class="hover-item">
-                    <h3>Project Source</h3>
-                    <div class="icons">
                         <a href="https://google.com" class="icon" target="_blank">
-                            <i class="fa-brands fa-github"></i>
+                            Live Site <i class="fa-solid fa-circle-chevron-right"></i>
                         </a>
                     </div>
                 </div>
             </div>
             
-            <div class="portfolio-item">
-                <div class="image">
-                    <img src="images/port4.jpg" alt="">
+            <div class="portfolio-item" data-tilt data-tilt-glare="true" data-tilt-max-glare="0.3">
+                <div class="proj-image">
+                    <img src="images/port3.jpg" alt="Screenshot of Project 3">
                 </div>
-                <div class="hover-item">
-                    <h3>Project Source</h3>
-                    <div class="icons">
+                <div class="proj-info">
+                    <h2>03</h2>
+                    <h3>This Website</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim expedita dolorem quaerat dolorum ipsum architecto provident laboriosam, esse corporis! Porro repellendus distinctio explicabo quasi consectetur id amet quos doloribus quam?</p>
+                    <div class="proj-btns">
                         <a href="https://google.com" class="icon" target="_blank">
-                            <i class="fa-brands fa-github"></i>
+                            GitHub <i class="fa-brands fa-github"></i>
                         </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio-item">
-                <div class="image">
-                    <img src="images/port5.jpg" alt="">
-                </div>
-                <div class="hover-item">
-                    <h3>Project Source</h3>
-                    <div class="icons">
                         <a href="https://google.com" class="icon" target="_blank">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio-item">
-                <div class="image">
-                    <img src="images/port6.jpg" alt="">
-                </div>
-                <div class="hover-item">
-                    <h3>Project Source</h3>
-                    <div class="icons">
-                        <a href="https://google.com" class="icon" target="_blank">
-                            <i class="fa-brands fa-github"></i>
+                            Live Site <i class="fa-solid fa-circle-chevron-right"></i>
                         </a>
                     </div>
                 </div>
@@ -355,6 +354,8 @@
         <div class="tooltip">Light Mode</div>
     </div>
 
+    <script type="text/javascript" src="vanilla-tilt.min.js"></script>
     <script src="app.js"></script>
+
 </body>
 </html>

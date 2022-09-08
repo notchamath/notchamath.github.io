@@ -29,36 +29,6 @@
   margin: 0.3rem 0;
   padding: 0;
 }
-.contact-content-con .left-contact .contact-icons {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  padding-top: 8rem;
-}
-.contact-content-con .left-contact .contact-icons a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 0.4rem;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  cursor: pointer;
-  color: var(--color-white);
-  background-color: var(--color-grey-5);
-  transition: var(--trans-1);
-}
-.contact-content-con .left-contact .contact-icons a:hover {
-  background-color: var(--color-secondary);
-}
-.contact-content-con .left-contact .contact-icons a:hover i {
-  color: var(--color-primary);
-}
-.contact-content-con .left-contact .contact-icons a i {
-  font-size: 2.6rem;
-  color: var(--color-white);
-  margin: 0 1rem;
-}
 .contact-content-con .right-contact {
   flex: 3;
   margin-left: 3rem;

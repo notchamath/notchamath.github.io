@@ -60,9 +60,11 @@ header{
 }
 
 section{
+    position: relative;
     width: 100%;
     min-height: 100vh;
     padding: 3rem 18rem;
+    margin-top: 3rem;
     background-color: var(--color-primary);
 }
 
@@ -81,43 +83,15 @@ section{
     }
 }
 
-.contact-icons{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    padding-top: 8rem;
-
-    a{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        margin: 0 .4rem;
-        width: 100px;
-        height: 100px;
-        border-radius: 20px;
-        cursor: pointer;
-        font-size: .9rem;
-        color: var(--color-white);
-        background-color: var(--color-grey-5);
-        transition: var(--trans-1);
-        
-        &:hover{
-            background-color: var(--color-secondary);
-            color: var(--color-primary);
-            
-            i{
-                color: var(--color-primary);
-            }
-        }
-
-        i{
-            font-size: 2.6rem;
-            color: var(--color-white);
-            margin: 0 1rem;
-        }
-    }
+hr{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 1px;
+    border: none;
+    background-color: var(--color-grey-4);
 }
 
 @import './media';

@@ -2,7 +2,7 @@
 // header-styles
 .header-content{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     min-height: 100vh;
 
     .left-header{
@@ -63,10 +63,14 @@
 
         .btns{
             display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin-top: 4rem;
+            justify-content: flex-start;
+            gap: 2.5rem;
+            margin-top: 2rem;
+        }
+
+        .contact-icons{
+            padding-top: 4rem;
+            justify-content: space-between;
         }
     }
 }

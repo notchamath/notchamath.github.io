@@ -44,6 +44,11 @@
         flex: 3;
         margin-left: 3rem;
 
+        .catcher{
+            position: absolute;
+            opacity: 0;
+        }
+
         .input-control{
             display: flex;
             margin: 1.5rem 0;
@@ -62,12 +67,12 @@
                 resize: none;
             }
             
-            .email, .subject, .message, .fname, .lname{
+            #email, #subject, #message, #fname, #lname{
                 flex-grow: 1;
                 flex-shrink: 1;
             }
 
-            .fname{
+            #fname{
                 margin-right: 1rem;
             }
 
@@ -77,9 +82,12 @@
 
         }
 
-        .submit-btn{
-            display: flex;
-            justify-content: flex-start;
+        button{
+            background-color: inherit;
+            border: inherit;
+            color: inherit;
+            font-size: inherit;
+            cursor: pointer;
         }
     }
 }

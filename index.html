@@ -344,31 +344,42 @@
             </div>
 
             <div class="right-contact">
-                <form action="" class="contact-form">
+
+                <form action="https://formsubmit.co/16cfd63e53dfba532b1d62f8f05f7e8f" method="POST" class="contact-form">
+
+                    <!-- Catcher -->
+                    <input type="text" name="_honey" class="catcher">
+
+                    <!-- Captcha -->
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <!-- Success Msg -->
+                    <!-- change redirect url to match live site -->
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/15%20Portfolio/index.html">
+
                     <div class="input-control">
-                        <input class="fname" type="text" required placeholder="First Name">
-                        <input class="lname" type="text" required placeholder="Last Name">
+                        <input id="fname" type="text" name="First&nbsp;Name" placeholder="First Name" required>
+                        <input id="lname" type="text" name="Last&nbsp;Name" placeholder="Last Name" required>
                     </div>
                     <div class="input-control">
-                        <input class="email" type="email" required placeholder="Your Email">
+                        <input id="email" type="email" name="Email" placeholder="Your Email" required>
                     </div>
 
                     <div class="input-control">
-                        <input class="subject" type="text" required placeholder="Enter Subject">
+                        <input id="subject" type="text" name="_subject" placeholder="Enter Subject" required>
                     </div>
                     
                     <div class="input-control">
-                        <textarea class="message" name="" id="" cols="45" rows="10"></textarea>    
+                        <textarea id="message" name="Message" cols="45" rows="10" required></textarea>    
                     </div>
 
-                    <div class="submit-btn">
-                        <div class="main-btn-container">
-                            <a href="#" class="main-btn">
-                                <span class="btn-text">Send Message</span>
-                                <span class="btn-icon"><i class="fa-solid fa-paper-plane"></i></span>
-                            </a>
+                    <button type="submit" class="main-btn-container">
+                        <div class="main-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-icon"><i class="fa-solid fa-paper-plane"></i></span>
                         </div>
-                    </div>
+                    </button>   
+                  
                 </form>
             </div>
         </div>

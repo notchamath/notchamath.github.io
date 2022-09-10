@@ -33,6 +33,10 @@
   flex: 3;
   margin-left: 3rem;
 }
+.contact-content-con .right-contact .catcher {
+  position: absolute;
+  opacity: 0;
+}
 .contact-content-con .right-contact .input-control {
   display: flex;
   margin: 1.5rem 0;
@@ -50,19 +54,22 @@
   background-color: var(--color-grey-5);
   resize: none;
 }
-.contact-content-con .right-contact .input-control .email, .contact-content-con .right-contact .input-control .subject, .contact-content-con .right-contact .input-control .message, .contact-content-con .right-contact .input-control .fname, .contact-content-con .right-contact .input-control .lname {
+.contact-content-con .right-contact .input-control #email, .contact-content-con .right-contact .input-control #subject, .contact-content-con .right-contact .input-control #message, .contact-content-con .right-contact .input-control #fname, .contact-content-con .right-contact .input-control #lname {
   flex-grow: 1;
   flex-shrink: 1;
 }
-.contact-content-con .right-contact .input-control .fname {
+.contact-content-con .right-contact .input-control #fname {
   margin-right: 1rem;
 }
 .contact-content-con .right-contact .input-control input:focus, .contact-content-con .right-contact .input-control textarea:focus {
   background-color: var(--color-white);
 }
-.contact-content-con .right-contact .submit-btn {
-  display: flex;
-  justify-content: flex-start;
+.contact-content-con .right-contact button {
+  background-color: inherit;
+  border: inherit;
+  color: inherit;
+  font-size: inherit;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1432px) {

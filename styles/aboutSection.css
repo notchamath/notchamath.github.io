@@ -9,18 +9,35 @@
 }
 .about-container .left-about p {
   line-height: 2rem;
-  padding: 1rem;
+  padding-top: 2rem;
   padding-left: 0;
   color: var(--color-grey-1);
+}
+.about-container .left-about p b {
+  color: var(--color-secondary);
+}
+.about-container .left-about ul {
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+.about-container .left-about ul li {
+  list-style: inside;
 }
 .about-container .left-about h4 {
   font-size: 2rem;
   text-transform: uppercase;
 }
+.about-container .left-about .main-btn-container {
+  margin-top: 5rem;
+}
 .about-container .right-about {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 230px 270px;
   gap: 2rem;
+}
+.about-container .right-about .about-item:first-of-type {
+  grid-row-start: span 2;
 }
 .about-container .right-about .about-item {
   border-radius: 5px;
@@ -40,17 +57,18 @@
   padding: 1.5rem;
 }
 .about-container .right-about .about-item .about-text .large-text {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: var(--color-secondary);
 }
 .about-container .right-about .about-item .about-text .small-text {
   position: relative;
   padding-left: 3rem;
+  margin-top: 2rem;
   text-transform: uppercase;
   font-size: 1.2rem;
-  color: var(--color-grey-1);
   letter-spacing: 2px;
+  color: var(--color-grey-1);
 }
 .about-container .right-about .about-item .about-text .small-text::before {
   content: "";
@@ -75,7 +93,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-basis: 20%;
+  flex-basis: 10%;
+  text-align: center;
 }
 .about-stats .skills-list .skill i {
   font-size: 6rem;

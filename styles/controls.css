@@ -63,6 +63,9 @@
   overflow: hidden;
   transition: var(--trans-1);
 }
+.main-btn-container .main-btn i {
+  color: var(--color-black);
+}
 .main-btn-container .main-btn .btn-text {
   padding: 0 1rem;
 }
@@ -75,6 +78,7 @@
   background-color: var(--color-secondary);
 }
 .main-btn-container .main-btn:hover {
+  color: var(--color-black);
   background-color: var(--color-secondary);
 }
 

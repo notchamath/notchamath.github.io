@@ -71,6 +71,10 @@
         border: 3px solid var(--color-secondary);
         overflow: hidden;
         transition: var(--trans-1);
+
+        i{
+            color: var(--color-black);
+        }
     
         .btn-text{
             padding: 0 1rem;
@@ -87,6 +91,7 @@
     }
     
     .main-btn:hover{
+        color: var(--color-black);
         background-color: var(--color-secondary);
     }
 }

@@ -98,7 +98,6 @@
 
     // Header
     header{
-        padding: 5rem;
 
         .header-content{
             grid-template-columns: 1fr;
@@ -150,5 +149,23 @@
 
 @media screen and (max-width: 735px){
 
-    
+    // Controls
+    .contact-icons{
+        padding-top: 5rem;
+    }
+
+
+
+    //Header 
+    .header-content{
+        .right-header{
+            .btns{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+      
+            }
+        }
+    }
 }

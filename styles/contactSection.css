@@ -137,9 +137,6 @@
   .controls .control {
     margin: 1rem 0.3rem;
   }
-  header {
-    padding: 5rem;
-  }
   header .header-content {
     grid-template-columns: 1fr;
     padding-bottom: 6rem;
@@ -170,5 +167,16 @@
   .contact-content-con .right-contact {
     margin-left: 0;
     margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 735px) {
+  .contact-icons {
+    padding-top: 5rem;
+  }
+  .header-content .right-header .btns {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
   }
 }/*# sourceMappingURL=contactSection.css.map */

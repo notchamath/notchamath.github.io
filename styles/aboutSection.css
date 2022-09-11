@@ -21,7 +21,17 @@
   margin-top: 1rem;
 }
 .about-container .left-about ul li {
-  list-style: inside;
+  position: relative;
+  margin: 0.5rem 0;
+}
+.about-container .left-about ul li::before {
+  content: "";
+  position: absolute;
+  left: -2rem;
+  top: 10px;
+  width: 1rem;
+  height: 2px;
+  background-color: var(--color-grey-3);
 }
 .about-container .left-about h4 {
   font-size: 2rem;
@@ -32,8 +42,8 @@
 }
 .about-container .right-about {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 230px 270px;
+  grid-template-columns: 310px 1fr;
+  grid-template-rows: 30% 45%;
   gap: 2rem;
 }
 .about-container .right-about .about-item:first-of-type {
@@ -125,38 +135,45 @@
   background-color: var(--color-grey-5);
 }
 
-@media screen and (max-width: 1432px) {
-  header {
-    padding: 0;
+@media screen and (max-width: 1700px) {
+  section {
+    margin-top: 6rem;
+    padding: 0 6rem;
   }
-  header .right-header {
-    padding: 0 !important;
+  #portfolio hr {
+    bottom: -2rem;
   }
-  .theme-btn {
-    width: 50px;
-    height: 50px;
+}
+@media screen and (max-width: 1450px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .header-content, .timeline, .projects {
-    grid-template-columns: 1fr;
-    padding-bottom: 6rem;
+  .projects .portfolio-item {
+    width: 380px;
+    height: 640px;
   }
+  .projects .portfolio-item .proj-info p {
+    font-size: 1rem;
+  }
+  .projects .portfolio-item .proj-info .proj-btns {
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 1290px) {
   .right-header {
-    width: 90%;
-    margin: 0 auto;
-  }
-  .right-header .name {
-    font-size: 2.5rem !important;
-  }
-  .header-content .left-header .image {
-    margin: 0 auto;
-    width: 90%;
+    padding-right: 8rem !important;
   }
   .about-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
   }
   .about-container .right-about {
     grid-template-columns: 1fr;
-    padding-top: 2.5rem;
+    grid-template-rows: 0;
+    padding-top: 3rem;
+  }
+  .about-container .right-about .about-item .about-text .small-text {
+    margin-top: 1.5rem;
   }
   .about-container .left-about {
     padding-right: 0;
@@ -164,25 +181,11 @@
   .about-container .left-about p {
     padding-left: 0;
   }
-  .about-stats .progress-bars {
-    grid-template-columns: 1fr;
-  }
-  .contact-content-con {
-    flex-direction: column;
-  }
-  .contact-content-con .right-contact {
-    margin-left: 0;
-    margin-top: 2rem;
-  }
-  .contact-content-con .right-contact .input-control {
-    flex-direction: column;
-  }
-  .contact-content-con .right-contact .input-control .fname {
-    margin-right: 0;
-    margin-bottom: 1.5rem;
-  }
-  .section {
-    padding: 2rem;
+}
+@media screen and (max-width: 1000px) {
+  .theme-btn {
+    width: 50px;
+    height: 50px;
   }
   .controls {
     top: auto;
@@ -192,9 +195,43 @@
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    background-color: var(--color-grey-5);
+    background-color: transparent;
   }
   .controls .control {
     margin: 1rem 0.3rem;
+  }
+  header {
+    padding: 5rem;
+  }
+  header .header-content {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+  header .header-content .right-header {
+    width: 90%;
+    margin: 0 auto;
+  }
+  header .header-content .right-header .name {
+    font-size: 2.5rem !important;
+  }
+  header .header-content .right-header .contact-icons {
+    justify-content: flex-start;
+  }
+  header .header-content .right-header {
+    padding: 0 !important;
+  }
+  .header-content .left-header .image {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .projects {
+    grid-template-columns: 1fr;
+  }
+  .contact-content-con {
+    flex-direction: column;
+  }
+  .contact-content-con .right-contact {
+    margin-left: 0;
+    margin-top: 2rem;
   }
 }/*# sourceMappingURL=aboutSection.css.map */

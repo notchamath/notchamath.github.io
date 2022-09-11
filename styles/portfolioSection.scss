@@ -12,8 +12,9 @@
 .projects{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
     gap: 2rem;
-    margin-top: .8rem;
+    margin: .8rem;
 
     .portfolio-item{
         position: relative;

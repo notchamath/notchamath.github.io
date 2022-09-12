@@ -56,7 +56,6 @@ body{
 header{
     min-height: 100vh;
     color: var(--color-white);
-    overflow: hidden;
 }
 
 section{
@@ -69,6 +68,7 @@ section{
 }
 
 .main-title{
+    width: 100%;
     text-align: center;
     
     h2{

@@ -43,6 +43,7 @@
     }
 
     .right-header{
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -68,8 +69,8 @@
         }
 
         .contact-icons{
+            justify-content: flex-start;
             padding-top: 4rem;
-            justify-content: space-between;
         }
     }
 }

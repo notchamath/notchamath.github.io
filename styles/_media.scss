@@ -23,6 +23,28 @@
         }
     }
 
+    .contact-icons{
+        flex-wrap: wrap;
+        gap: .5rem;
+
+        a:last-of-type{
+            font-size: .6rem;
+        }
+
+        a{
+            margin: 0;
+            width: 60px;
+            height: 60px;
+            font-size: .8rem;
+
+            i{
+                font-size: 1.3rem;
+                color: var(--color-white);
+                margin: 0;
+            }
+        }
+    }
+
 
     //General
     section{
@@ -36,6 +58,11 @@
             font-size: 2.5rem;
         }
     }
+
+    hr{
+        width: 80%;
+    }
+
 
  
     // Header
@@ -53,7 +80,7 @@
 
         .right-header{
      
-            padding: 2rem 1rem;  //fix
+            padding: 2rem 1rem;
             text-align: center;
             
             .name{
@@ -76,34 +103,7 @@
 
             .contact-icons{
                 justify-content: center;
-                flex-direction: row;
-                flex-wrap: wrap;
-                gap: .5rem;
-        
-                a:nth-of-type(1){
-                    flex-basis: 80%;
-                    border-radius: 20px;
-                    order: 1;
-                }
-        
-                a:last-of-type{
-                    font-size: .6rem;
-                }
-        
-                a{
-                    margin: 0;
-                    width: 60px;
-                    height: 60px;
-                    font-size: .8rem;
-        
-                    i{
-                        font-size: 1rem;
-                        color: var(--color-white);
-                        margin: 0;
-                    }
-                }
             }
-
         }
     }
 
@@ -111,13 +111,31 @@
     // About
     .about-container{
         grid-template-columns: 1fr;
+        padding: 2rem;
+        padding-top: 0;
 
         .left-about{
+            order: 1;
             padding-right: 0;
+            margin-top: 6rem;
+
+            h4{
+                font-size: 1rem;
+            }
+
+            p{
+                padding-top: .8rem;
+            }
+
+            .main-btn-container{
+                margin: 2rem 0;
+            }
         }
     
         .right-about{
+            margin-top: 2rem;
             grid-template-columns: 1fr;
+            grid-template-rows: 51% 22% 25%;
 
             .about-item:first-of-type{
                 grid-row-start: span 1;
@@ -126,18 +144,16 @@
             .about-item{
 
                 .about-text{
-                    padding: 0rem;
+                    padding: 1rem;
 
                     .large-text{
-                        font-size: 1rem;
+                        font-size: 1.5rem;
                     }
                     
                     .small-text{
-                        padding-left: 0;
-                        margin-top: 0;
+                        padding-left: 2.5rem;
+                        margin-top: 1rem;
                         font-size: 1rem;
-
-                        // check below
                         letter-spacing: 2px;
                         color: var(--color-grey-1);
                         
@@ -146,7 +162,7 @@
                             position: absolute;
                             left: 0;
                             top: 15px;
-                            width: 2rem;
+                            width: 1.5rem;
                             height: 2px;
                             background-color: var(--color-grey-5);
                         }
@@ -155,11 +171,18 @@
             }
         }
     }
+    
+
 
     // Projects
+    .port-text{
+        padding: 2rem;
+    }
+
     .projects{
         grid-template-columns: 1fr;
-        margin: 0;
+        margin: 1rem;
+        padding-bottom: 3rem;
 
         .portfolio-item{
             width: 250px;
@@ -178,11 +201,16 @@
                 }
                 
                 p{
-                    font-size: .7rem;
+                    font-size: .9rem;
                 }
 
                 .proj-btns{
                     margin-top: 1rem;
+
+                    a{
+                        padding: 1px 8px;
+                        font-size: 1rem;
+                    }
                 }
             }
     
@@ -191,14 +219,31 @@
 
     .contact-content-con{
         flex-direction: column;
+        padding-top: 0;
+        margin: 1rem;
 
         .left-contact{
-            
-            .contact-icons{
-                flex-direction: column;
-                margin: 0 !important;
-                padding: 0;
+
+            h4{
+                font-size: 1.5rem;
             }
+
+            p{
+                margin-bottom: 2rem;
+            }
+
+            .contact-info{
+                .contact-item{
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            .contact-icons{
+                padding: 3rem 0;
+            }
+
         }
 
         .right-contact{

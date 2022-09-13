@@ -10,12 +10,14 @@
         right: 1.5%;
     }
 
+
     //General
     section{
         padding: 0;
         padding-right: 4rem;
         margin-top: 3rem;
     }
+
 
     // Header
     .header-content{
@@ -41,16 +43,29 @@
 
 
     // Contact
-    .contact-content-con{
+    #contact{
+        display: flex;
         flex-direction: column;
-        margin: 1rem;
+        align-items: center;
+    }
+
+    .contact-content-con{
+        width: 60%;
+        flex-direction: column;
+
+        .left-contact{
+            width: 100%;
+        }
 
         .right-contact{
-            justify-content: center;
             margin: 0;
-            margin-top: 3rem;
+        }
+
+        .contact-icons{
+            padding: 3rem 0;
         }
     }
+
 }
 
 @media screen and (max-width: 1200px){
@@ -153,19 +168,17 @@
     // Projects
     .projects{
         grid-template-columns: 1fr;
-        padding-bottom: 3rem;
     }
 
     // Contacts
     .contact-content-con{
         .right-contact{
             .input-control{
-                display: flex;
                 flex-direction: column;
-                gap: 1.5rem;
+                gap: 1rem;
 
                 #fname{
-                    margin-right: 0 ;
+                    margin-right: 0;
                 }
             }
         }
@@ -343,11 +356,10 @@
         }
     }
 
+    // Contact
     .contact-content-con{
-        flex-direction: column;
-        padding-top: 0;
-        margin: 1rem;
-
+        width: 90%;
+        
         .left-contact{
 
             h4{
@@ -366,9 +378,6 @@
                 }
             }
 
-            .contact-icons{
-                padding: 3rem 0;
-            }
         }
     }
 }

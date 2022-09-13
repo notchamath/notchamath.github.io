@@ -13,8 +13,9 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-    gap: 2rem;
+    gap: 3rem;
     margin: .8rem;
+    padding-bottom: 3rem;
 
     .portfolio-item{
         position: relative;

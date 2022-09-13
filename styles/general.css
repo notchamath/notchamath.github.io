@@ -62,7 +62,7 @@ section {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  padding: 3rem 18rem;
+  padding: 3rem 10rem;
   margin-top: 3rem;
   background-color: var(--color-primary);
 }
@@ -120,14 +120,23 @@ footer {
     margin: 1rem;
     padding-bottom: 4rem;
   }
-  .contact-content-con {
+  #contact {
+    display: flex;
     flex-direction: column;
-    margin: 1rem;
+    align-items: center;
+  }
+  .contact-content-con {
+    width: 60%;
+    flex-direction: column;
+  }
+  .contact-content-con .left-contact {
+    width: 100%;
   }
   .contact-content-con .right-contact {
-    justify-content: center;
     margin: 0;
-    margin-top: 3rem;
+  }
+  .contact-content-con .contact-icons {
+    padding: 3rem 0;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -202,12 +211,10 @@ footer {
   }
   .projects {
     grid-template-columns: 1fr;
-    padding-bottom: 3rem;
   }
   .contact-content-con .right-contact .input-control {
-    display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
   }
   .contact-content-con .right-contact .input-control #fname {
     margin-right: 0;
@@ -330,9 +337,7 @@ footer {
     font-size: 1rem;
   }
   .contact-content-con {
-    flex-direction: column;
-    padding-top: 0;
-    margin: 1rem;
+    width: 90%;
   }
   .contact-content-con .left-contact h4 {
     font-size: 1.5rem;
@@ -342,8 +347,5 @@ footer {
   }
   .contact-content-con .left-contact .contact-info .contact-item p {
     font-size: 1rem;
-  }
-  .contact-content-con .left-contact .contact-icons {
-    padding: 3rem 0;
   }
 }/*# sourceMappingURL=general.css.map */

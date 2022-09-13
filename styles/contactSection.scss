@@ -2,12 +2,13 @@
 //Contact section styles
 .contact-content-con{
     display: flex;
+    justify-content: center;
     padding-top: 3.5rem;
-
+    
     .left-contact{
         position: relative;
-        flex: 1;
-
+        width: 35%;
+        
         h4{
             margin-top: 1rem;
             font-size: 2rem;
@@ -41,10 +42,8 @@
     }
 
     .right-contact{
-        flex: 2;
-        flex-shrink: 1;
         margin-left: 3rem;
-
+     
         .catcher{
             position: absolute;
             opacity: 0;
@@ -52,14 +51,13 @@
 
         .input-control{
             display: flex;
-            margin: 1.5rem 0;
+            margin: 1rem 0;
             width: 100%;
             
             input, textarea{
                 border-radius: 30px;
                 font-weight: inherit;
-                font-size: inherit;
-                font-family: inherit;
+                font-size: 1.2rem;
                 padding: .8rem 1.1rem;
                 outline: none;
                 border: none;

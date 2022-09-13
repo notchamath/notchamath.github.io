@@ -1,13 +1,193 @@
-@media screen and (max-width: 500px){
 
-    //Control
-     .theme-btn{
+@media screen and (max-width: 1600px){
+
+    // Controls
+    .controls{
+        right: 1.5%;
+    }
+
+    .theme-btn{
+        right: 1.5%;
+    }
+
+    //General
+    section{
+        padding: 0;
+        padding-right: 4rem;
+        margin-top: 3rem;
+    }
+
+    // Header
+    .header-content{
+        
+        .right-header{
+            padding-right: 5rem;
+        }
+    }
+
+
+    // About
+    .about-container{
+        padding: 2rem;
+    }
+    
+
+    // Projects
+ 
+    .projects{
+        grid-template-columns: 1fr 1fr;
+        margin: 1rem;
+        padding-bottom: 4rem;
+    }
+
+    .contact-content-con{
+        flex-direction: column;
+        margin: 1rem;
+
+        .right-contact{
+            justify-content: center;
+            margin: 0;
+            margin-top: 3rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px){
+
+    // About
+    .about-container{
+       padding-bottom: 5rem;
+    
+        .right-about{
+            margin-top: 2rem;
+            grid-template-columns: 1fr;
+            grid-template-rows: 51% 22% 25%;
+
+            .about-item:first-of-type{
+                grid-row-start: span 1;
+            }
+            
+        }
+    }
+    
+
+    // Projects
+    .projects{
+        grid-template-columns: 1fr 1fr;
+        margin: 1rem;
+        padding-bottom: 4rem;
+    }
+
+    .contact-content-con{
+        flex-direction: column;
+        margin: 1rem;
+
+        .right-contact{
+            justify-content: center;
+            margin: 0;
+            margin-top: 3rem;
+        }
+    }
+}
+
+@media screen and (max-width: 910px){
+
+    // Control
+    .theme-btn{
         top: 3%;
+        right: 2%;
         transform: 0;
         width: 50px;
         height: 50px;
     }
 
+    // Header
+    .header-content{
+        grid-template-columns: 1fr;
+        margin-right: 7%;
+
+        .left-header{
+            top: 10%;
+    
+            .image{
+                width: 500px;
+                height: 500px;
+            }
+        }
+
+        .right-header{
+        
+            padding: 4rem 1rem;
+            text-align: center;
+            
+            .name{
+                font-size: 2.5rem;
+            }
+
+            p{
+                font-size: 1.2rem;
+            }
+
+            .btns{
+              justify-content: center;
+            }
+    
+            .contact-icons{
+                justify-content: center;
+            }
+        }
+    }
+
+    // About
+    .about-container{
+        grid-template-columns: 1fr;
+        padding: 2rem;
+        padding-top: 0;
+
+        .left-about{
+            order: 1;
+            padding-right: 0;
+            margin-top: 6rem;
+
+            h4{
+                font-size: 1rem;
+            }
+
+            p{
+                padding-top: .8rem;
+            }
+
+            .main-btn-container{
+                margin: 2rem 0;
+            }
+        }
+    }
+
+    .projects{
+        grid-template-columns: 1fr;
+        margin: 1rem;
+        padding-bottom: 3rem;
+
+    }
+
+    .contact-content-con{
+        .right-contact{
+            .input-control{
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+
+                #fname{
+                    margin-right: 0 ;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    //Control
     .controls{
         top: auto;
         bottom: 0;
@@ -67,11 +247,8 @@
  
     // Header
     .header-content{
-        grid-template-columns: 1fr;
-
+        margin: 0;
         .left-header{
-            top: 10%;
-    
             .image{
                 width: 200px;
                 height: 200px;
@@ -79,9 +256,7 @@
         }
 
         .right-header{
-     
             padding: 2rem 1rem;
-            text-align: center;
             
             .name{
                 font-size: 1.5rem;
@@ -100,47 +275,15 @@
                     align-self: center;
                 }
             }
-
-            .contact-icons{
-                justify-content: center;
-            }
         }
     }
 
 
     // About
     .about-container{
-        grid-template-columns: 1fr;
-        padding: 2rem;
-        padding-top: 0;
-
-        .left-about{
-            order: 1;
-            padding-right: 0;
-            margin-top: 6rem;
-
-            h4{
-                font-size: 1rem;
-            }
-
-            p{
-                padding-top: .8rem;
-            }
-
-            .main-btn-container{
-                margin: 2rem 0;
-            }
-        }
     
         .right-about{
-            margin-top: 2rem;
-            grid-template-columns: 1fr;
-            grid-template-rows: 51% 22% 25%;
-
-            .about-item:first-of-type{
-                grid-row-start: span 1;
-            }
-            
+        
             .about-item{
 
                 .about-text{
@@ -180,10 +323,6 @@
     }
 
     .projects{
-        grid-template-columns: 1fr;
-        margin: 1rem;
-        padding-bottom: 3rem;
-
         .portfolio-item{
             width: 250px;
             height: 500px;

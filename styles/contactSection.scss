@@ -41,7 +41,8 @@
     }
 
     .right-contact{
-        flex: 3;
+        flex: 2;
+        flex-shrink: 1;
         margin-left: 3rem;
 
         .catcher{

@@ -43,7 +43,7 @@
 .about-container .right-about {
   display: grid;
   grid-template-columns: 310px 1fr;
-  grid-template-rows: 30% 45%;
+  grid-template-rows: 35% 45%;
   gap: 2rem;
 }
 .about-container .right-about .about-item:first-of-type {

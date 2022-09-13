@@ -33,13 +33,14 @@
     
 
     // Projects
- 
     .projects{
         grid-template-columns: 1fr 1fr;
         margin: 1rem;
         padding-bottom: 4rem;
     }
 
+
+    // Contact
     .contact-content-con{
         flex-direction: column;
         margin: 1rem;
@@ -69,25 +70,6 @@
             
         }
     }
-    
-
-    // Projects
-    .projects{
-        grid-template-columns: 1fr 1fr;
-        margin: 1rem;
-        padding-bottom: 4rem;
-    }
-
-    .contact-content-con{
-        flex-direction: column;
-        margin: 1rem;
-
-        .right-contact{
-            justify-content: center;
-            margin: 0;
-            margin-top: 3rem;
-        }
-    }
 }
 
 @media screen and (max-width: 910px){
@@ -95,10 +77,15 @@
     // Control
     .theme-btn{
         top: 3%;
-        right: 2%;
+        left: 0;
         transform: 0;
         width: 50px;
         height: 50px;
+    }
+
+    // General
+    hr{
+        transform: translateX(-57%);
     }
 
     // Header
@@ -163,13 +150,13 @@
         }
     }
 
+    // Projects
     .projects{
         grid-template-columns: 1fr;
-        margin: 1rem;
         padding-bottom: 3rem;
-
     }
 
+    // Contacts
     .contact-content-con{
         .right-contact{
             .input-control{
@@ -241,6 +228,7 @@
 
     hr{
         width: 80%;
+        transform: translateX(-50%);
     }
 
 
@@ -344,7 +332,7 @@
                 }
 
                 .proj-btns{
-                    margin-top: 1rem;
+                    margin-top: 1.3rem;
 
                     a{
                         padding: 1px 8px;
@@ -352,7 +340,6 @@
                     }
                 }
             }
-    
         }
     }
 
@@ -381,21 +368,6 @@
 
             .contact-icons{
                 padding: 3rem 0;
-            }
-
-        }
-
-        .right-contact{
-            margin: 0;
-    
-            .input-control{
-                display: flex;
-                flex-direction: column;
-                gap: 1.5rem;
-    
-                #fname{
-                    margin-right: 0;
-                }
             }
         }
     }

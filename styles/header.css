@@ -122,28 +122,17 @@
   .about-container .right-about .about-item:first-of-type {
     grid-row-start: span 1;
   }
-  .projects {
-    grid-template-columns: 1fr 1fr;
-    margin: 1rem;
-    padding-bottom: 4rem;
-  }
-  .contact-content-con {
-    flex-direction: column;
-    margin: 1rem;
-  }
-  .contact-content-con .right-contact {
-    justify-content: center;
-    margin: 0;
-    margin-top: 3rem;
-  }
 }
 @media screen and (max-width: 910px) {
   .theme-btn {
     top: 3%;
-    right: 2%;
+    left: 0;
     transform: 0;
     width: 50px;
     height: 50px;
+  }
+  hr {
+    transform: translateX(-57%);
   }
   .header-content {
     grid-template-columns: 1fr;
@@ -193,7 +182,6 @@
   }
   .projects {
     grid-template-columns: 1fr;
-    margin: 1rem;
     padding-bottom: 3rem;
   }
   .contact-content-con .right-contact .input-control {
@@ -246,6 +234,7 @@
   }
   hr {
     width: 80%;
+    transform: translateX(-50%);
   }
   .header-content {
     margin: 0;
@@ -314,7 +303,7 @@
     font-size: 0.9rem;
   }
   .projects .portfolio-item .proj-info .proj-btns {
-    margin-top: 1rem;
+    margin-top: 1.3rem;
   }
   .projects .portfolio-item .proj-info .proj-btns a {
     padding: 1px 8px;
@@ -336,16 +325,5 @@
   }
   .contact-content-con .left-contact .contact-icons {
     padding: 3rem 0;
-  }
-  .contact-content-con .right-contact {
-    margin: 0;
-  }
-  .contact-content-con .right-contact .input-control {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  .contact-content-con .right-contact .input-control #fname {
-    margin-right: 0;
   }
 }/*# sourceMappingURL=header.css.map */

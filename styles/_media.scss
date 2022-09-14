@@ -24,6 +24,19 @@
         
         .right-header{
             padding-right: 5rem;
+            
+            .name{
+                font-size: 1.8rem;
+            }
+
+            p{
+                font-size: 1rem;
+                margin-bottom: 0;
+            }
+
+            .contact-icons{
+                padding-top: 1.8rem;
+            }
         }
     }
 
@@ -69,26 +82,6 @@
 }
 
 @media screen and (max-width: 1200px){
-
-    // Header
-    .header-content{
-      
-        .right-header{
-        
-            .name{
-                font-size: 1.8rem;
-            }
-
-            p{
-                font-size: 1rem;
-                margin-bottom: 0;
-            }
-
-            .contact-icons{
-                padding-top: 1.8rem;
-            }
-        }
-    }
 
     // About
     .about-container{

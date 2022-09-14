@@ -49,9 +49,12 @@
   padding: 0.8rem 1.1rem;
   outline: none;
   border: none;
-  color: var(--color-grey-3);
+  color: var(--color-white);
   background-color: var(--color-grey-5);
   resize: none;
+}
+.contact-content-con .right-contact .input-control textarea {
+  font-family: "Poppins", sans-serif;
 }
 .contact-content-con .right-contact .input-control #email, .contact-content-con .right-contact .input-control #subject, .contact-content-con .right-contact .input-control #message, .contact-content-con .right-contact .input-control #fname, .contact-content-con .right-contact .input-control #lname {
   flex-grow: 1;
@@ -61,7 +64,7 @@
   margin-right: 1rem;
 }
 .contact-content-con .right-contact .input-control input:focus, .contact-content-con .right-contact .input-control textarea:focus {
-  background-color: var(--color-white);
+  background-color: var(--color-grey-3);
 }
 .contact-content-con .right-contact button {
   background-color: inherit;
@@ -84,7 +87,7 @@
     margin-top: 3rem;
   }
   .header-content .right-header {
-    padding-right: 5rem;
+    padding-right: 8rem;
   }
   .header-content .right-header .name {
     font-size: 1.8rem;

@@ -61,9 +61,13 @@
                 padding: .8rem 1.1rem;
                 outline: none;
                 border: none;
-                color: var(--color-grey-3);
+                color: var(--color-white);
                 background-color: var(--color-grey-5);
                 resize: none;
+            }
+
+            textarea{
+                font-family: "Poppins", sans-serif;
             }
             
             #email, #subject, #message, #fname, #lname{
@@ -76,7 +80,7 @@
             }
 
             input:focus, textarea:focus{
-                background-color: var(--color-white);
+                background-color: var(--color-grey-3);
             }
 
         }

@@ -70,6 +70,21 @@
 
 @media screen and (max-width: 1200px){
 
+    // Header
+    .header-content{
+      
+        .right-header{
+        
+            .name{
+                font-size: 2.5rem;
+            }
+
+            p{
+                font-size: 1.2rem;
+            }
+        }
+    }
+
     // About
     .about-container{
        padding-bottom: 5rem;
@@ -83,6 +98,40 @@
                 grid-row-start: span 1;
             }
             
+        }
+    }
+
+    // Portfolio
+    .projects{
+        .portfolio-item{
+            width: 250px;
+            height: 500px;
+            
+            img{
+                width: 100%;
+                height: 150px;
+            }
+    
+            .proj-info{
+                padding: 1rem;
+    
+                h3{
+                    margin-bottom: .5rem;
+                }
+                
+                p{
+                    font-size: .9rem;
+                }
+
+                .proj-btns{
+                    margin-top: 1.3rem;
+
+                    a{
+                        padding: 1px 8px;
+                        font-size: 1rem;
+                    }
+                }
+            }
         }
     }
 }
@@ -122,14 +171,6 @@
             padding: 4rem 1rem;
             text-align: center;
             
-            .name{
-                font-size: 2.5rem;
-            }
-
-            p{
-                font-size: 1.2rem;
-            }
-
             .btns{
               justify-content: center;
             }
@@ -321,38 +362,6 @@
         padding: 2rem;
     }
 
-    .projects{
-        .portfolio-item{
-            width: 250px;
-            height: 500px;
-            
-            img{
-                width: 100%;
-                height: 150px;
-            }
-    
-            .proj-info{
-                padding: 1rem;
-    
-                h3{
-                    margin-bottom: .5rem;
-                }
-                
-                p{
-                    font-size: .9rem;
-                }
-
-                .proj-btns{
-                    margin-top: 1.3rem;
-
-                    a{
-                        padding: 1px 8px;
-                        font-size: 1rem;
-                    }
-                }
-            }
-        }
-    }
 
     // Contact
     .contact-content-con{

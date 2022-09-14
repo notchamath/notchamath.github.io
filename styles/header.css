@@ -120,6 +120,12 @@
   }
 }
 @media screen and (max-width: 1200px) {
+  .header-content .right-header .name {
+    font-size: 2.5rem;
+  }
+  .header-content .right-header p {
+    font-size: 1.2rem;
+  }
   .about-container {
     padding-bottom: 5rem;
   }
@@ -130,6 +136,30 @@
   }
   .about-container .right-about .about-item:first-of-type {
     grid-row-start: span 1;
+  }
+  .projects .portfolio-item {
+    width: 250px;
+    height: 500px;
+  }
+  .projects .portfolio-item img {
+    width: 100%;
+    height: 150px;
+  }
+  .projects .portfolio-item .proj-info {
+    padding: 1rem;
+  }
+  .projects .portfolio-item .proj-info h3 {
+    margin-bottom: 0.5rem;
+  }
+  .projects .portfolio-item .proj-info p {
+    font-size: 0.9rem;
+  }
+  .projects .portfolio-item .proj-info .proj-btns {
+    margin-top: 1.3rem;
+  }
+  .projects .portfolio-item .proj-info .proj-btns a {
+    padding: 1px 8px;
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 910px) {
@@ -157,12 +187,6 @@
   .header-content .right-header {
     padding: 4rem 1rem;
     text-align: center;
-  }
-  .header-content .right-header .name {
-    font-size: 2.5rem;
-  }
-  .header-content .right-header p {
-    font-size: 1.2rem;
   }
   .header-content .right-header .btns {
     justify-content: center;
@@ -291,30 +315,6 @@
   }
   .port-text {
     padding: 2rem;
-  }
-  .projects .portfolio-item {
-    width: 250px;
-    height: 500px;
-  }
-  .projects .portfolio-item img {
-    width: 100%;
-    height: 150px;
-  }
-  .projects .portfolio-item .proj-info {
-    padding: 1rem;
-  }
-  .projects .portfolio-item .proj-info h3 {
-    margin-bottom: 0.5rem;
-  }
-  .projects .portfolio-item .proj-info p {
-    font-size: 0.9rem;
-  }
-  .projects .portfolio-item .proj-info .proj-btns {
-    margin-top: 1.3rem;
-  }
-  .projects .portfolio-item .proj-info .proj-btns a {
-    padding: 1px 8px;
-    font-size: 1rem;
   }
   .contact-content-con {
     width: 90%;

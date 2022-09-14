@@ -18,6 +18,7 @@
   --color-grey-4: #454e56;
   --color-grey-5: #2a2e35;
   --color-grey-6: #12181b;
+  --color-special: #bde1e8;
   --box-shadow-1: 0 3px 15px rgba(0,0,0,0.3);
   --br-sm-2: 6px;
   --trans-1: all .4s ease-in-out;
@@ -35,6 +36,7 @@
   --color-grey-4: #454e56;
   --color-grey-5: #d8dbdf;
   --color-grey-6: #12181b;
+  --color-special: #1DA1F2;
   --box-shadow-1: 0 3px 15px rgba(0,0,0,0.3);
   --br-sm-2: 14px;
 }

@@ -47,11 +47,19 @@
   top: -18%;
   right: 5%;
   font-size: 6rem;
-  color: var(--color-grey-1);
+  color: var(--color-special);
   filter: opacity(0.4);
 }
 .projects .portfolio-item .proj-info h3 {
   margin-bottom: 0.5rem;
+}
+.projects .portfolio-item .proj-info p {
+  line-height: 2rem;
+}
+.projects .portfolio-item .proj-info p span, .projects .portfolio-item .proj-info p a {
+  color: var(--color-special);
+  font-style: italic;
+  font-weight: 600;
 }
 .projects .portfolio-item .proj-info .proj-btns {
   display: flex;

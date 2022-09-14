@@ -73,6 +73,12 @@
 
             }
 
+            .about-text:first-of-type{
+                .large-text{
+                    font-size: 2rem;
+                }
+            }
+
             .about-text{
                 display: flex;
                 flex-direction: column;

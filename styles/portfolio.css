@@ -1,4 +1,4 @@
-
+/* section description styles */
 .port-text {
   padding: 2rem 0;
   text-align: center;
@@ -8,6 +8,7 @@
   color: var(--color-secondary);
 }
 
+/* portfolio section styles */
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -16,6 +17,8 @@
   margin: 0.8rem;
   padding-bottom: 3rem;
 }
+
+/* projects item styles */
 .projects .portfolio-item {
   position: relative;
   overflow: hidden;
@@ -28,22 +31,26 @@
   border: 0.2px solid rgba(255, 255, 255, 0.2);
   background-color: var(--color-grey-5);
 }
+
+/* projects image styles */
 .projects .portfolio-item .proj-image a {
   width: 100%;
 }
-.projects .portfolio-item a img, .projects .portfolio-item img {
+.projects .portfolio-item img{
   width: 100%;
   height: 280px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 15px;
   cursor: pointer;
 }
+
+/* project info styles */
 .projects .portfolio-item .proj-info {
   display: flex;
   flex-direction: column;
   padding: 0 1.5rem;
 }
+/* project number styles */
 .projects .portfolio-item .proj-info h2 {
   position: absolute;
   top: 29%;
@@ -52,17 +59,22 @@
   color: var(--color-special);
   filter: opacity(0.4);
 }
+/* project title */
 .projects .portfolio-item .proj-info h3 {
   margin-bottom: 0.5rem;
 }
+/* project description */
 .projects .portfolio-item .proj-info p {
   line-height: 2rem;
 }
+/* description highlights styles */
 .projects .portfolio-item .proj-info p span, .projects .portfolio-item .proj-info p a {
   color: var(--color-special);
   font-style: italic;
   font-weight: 600;
 }
+
+/* project buttons section styles */
 .projects .portfolio-item .proj-info .proj-btns {
   position: absolute;
   display: flex;
@@ -72,6 +84,7 @@
   transform: translateX(-50%);
   gap: 1rem;
 }
+/* project buttons styles */
 .projects .portfolio-item .proj-info .proj-btns a {
   flex-shrink: 0;
   padding: 1px 10px;

@@ -1,15 +1,19 @@
-
+/* header section styles */
 .header-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-height: 100vh;
 }
+
+/* header left-section styles */
 .header-content .left-header {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+/* image styles */
 .header-content .left-header .image {
   width: 68%;
   height: 70%;
@@ -18,25 +22,11 @@
 .header-content .left-header .image img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: var(--br-sm-2);
-  -webkit-animation: imageFall 1s ease-out forwards;
-          animation: imageFall 1s ease-out forwards;
+  animation: imageFall 1s ease-out forwards;
 }
-@-webkit-keyframes imageFall {
-  0% {
-    transform: scale(0) translateY(-200%) rotate(180deg);
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1) translateY(0);
-  }
-}
+/* image animations */
 @keyframes imageFall {
   0% {
     transform: scale(0) translateY(-200%) rotate(180deg);
@@ -50,6 +40,9 @@
     transform: scale(1) translateY(0);
   }
 }
+
+
+/* header right-section styles */
 .header-content .right-header {
   position: relative;
   display: flex;
@@ -57,22 +50,30 @@
   justify-content: center;
   padding-right: 18rem;
 }
+
+/* name styles */
 .header-content .right-header .name {
   font-size: 3rem;
 }
 .header-content .right-header .name span {
   color: var(--color-secondary);
 }
+
+/* short description styles */
 .header-content .right-header p {
   margin: 1.5rem 0;
   line-height: 2rem;
 }
+
+/* main buttons styles */
 .header-content .right-header .btns {
   display: flex;
   justify-content: flex-start;
   gap: 2.5rem;
   margin-top: 2rem;
 }
+
+/* contact icons styles */
 .header-content .right-header .contact-icons {
   justify-content: flex-start;
   padding-top: 4rem;

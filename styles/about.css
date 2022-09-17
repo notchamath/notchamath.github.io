@@ -1,12 +1,18 @@
-
+/* about section styles */
 .about-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding-top: 3.5rem;
   padding-bottom: 5rem;
 }
+
+/* left about section styles */
 .about-container .left-about {
   padding-right: 5rem;
+}
+.about-container .left-about h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
 }
 .about-container .left-about p {
   line-height: 2rem;
@@ -25,6 +31,7 @@
   position: relative;
   margin: 0.5rem 0;
 }
+/* bullet points */
 .about-container .left-about ul li::before {
   content: "";
   position: absolute;
@@ -34,22 +41,27 @@
   height: 2px;
   background-color: var(--color-grey-3);
 }
-.about-container .left-about h4 {
-  font-size: 2rem;
-  text-transform: uppercase;
-}
+
+/* Resume main button */
 .about-container .left-about .main-btn-container {
   margin-top: 2rem;
 }
+
+
+/* right about section styles */
 .about-container .right-about {
   display: grid;
   grid-template-columns: 310px 1fr;
   grid-template-rows: 38% 45%;
   gap: 2rem;
 }
+
+/* first item spans 2 rows of the grid*/
 .about-container .right-about .about-item:first-of-type {
   grid-row-start: span 2;
 }
+
+/* grid items styles */
 .about-container .right-about .about-item {
   border-radius: 5px;
   border: 1px solid var(--color-grey-5);
@@ -62,19 +74,26 @@
   border: 1px solid var(--color-secondary);
   box-shadow: 1px 4px 15px var(--color-special);
 }
-.about-container .right-about .about-item .about-text:first-of-type .large-text {
-  font-size: 2rem;
-}
+
+/* item content styles */
 .about-container .right-about .about-item .about-text {
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
 }
+
+/* large text styles */
 .about-container .right-about .about-item .about-text .large-text {
   font-size: 2.5rem;
   font-weight: 700;
   color: var(--color-secondary);
 }
+/* smaller large text for first item */
+.about-container .right-about .about-item .about-text:first-of-type .large-text {
+  font-size: 2rem;
+}
+
+/* small text styles */
 .about-container .right-about .about-item .about-text .small-text {
   position: relative;
   padding-left: 3rem;
@@ -84,6 +103,7 @@
   letter-spacing: 2px;
   color: var(--color-grey-1);
 }
+/* bullet points */
 .about-container .right-about .about-item .about-text .small-text::before {
   content: "";
   position: absolute;
@@ -94,15 +114,40 @@
   background-color: var(--color-grey-5);
 }
 
+/* Toolkit styles */
 .about-stats {
   padding-bottom: 4rem;
 }
+
+/* title styles */
+.stat-title {
+  position: relative;
+  text-align: center;
+  padding: 3.5rem 0;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+/* dividing line styles */
+.stat-title::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 40%;
+  height: 1px;
+  background-color: var(--color-grey-5);
+}
+
+/* list of skills styles */
 .about-stats .skills-list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 3rem;
 }
+
+/* skill item styles */
 .about-stats .skills-list .skill {
   display: flex;
   flex-direction: column;
@@ -117,24 +162,6 @@
 .about-stats .skills-list .skill img {
   width: 80px;
   height: 96px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
-.stat-title {
-  position: relative;
-  text-align: center;
-  padding: 3.5rem 0;
-  font-size: 1.4rem;
-  text-transform: uppercase;
-}
-.stat-title::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
-  width: 40%;
-  height: 1px;
-  background-color: var(--color-grey-5);
-}

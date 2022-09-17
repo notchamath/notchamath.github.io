@@ -1,0 +1,79 @@
+
+.contact-content-con {
+  display: flex;
+  justify-content: center;
+  padding-top: 3.5rem;
+}
+.contact-content-con .left-contact {
+  position: relative;
+  width: 35%;
+}
+.contact-content-con .left-contact h4 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.contact-content-con .left-contact p {
+  margin: 1rem 0;
+  line-height: 2rem;
+}
+.contact-content-con .left-contact .contact-info .contact-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-content-con .left-contact .contact-info .contact-item .icon {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  align-items: center;
+}
+.contact-content-con .left-contact .contact-info .contact-item p {
+  margin: 0.3rem 0;
+  padding: 0;
+}
+.contact-content-con .right-contact {
+  margin-left: 3rem;
+}
+.contact-content-con .right-contact .catcher {
+  position: absolute;
+  opacity: 0;
+}
+.contact-content-con .right-contact .input-control {
+  display: flex;
+  margin: 1rem 0;
+  width: 100%;
+}
+.contact-content-con .right-contact .input-control input, textarea {
+  border-radius: 30px;
+  font-weight: inherit;
+  font-size: 1rem;
+  padding: 0.8rem 1.1rem;
+  outline: none;
+  border: none;
+  color: var(--color-white);
+  background-color: var(--color-grey-5);
+  resize: none;
+}
+.contact-content-con .right-contact .input-control textarea {
+  font-family: "Poppins", sans-serif;
+}
+
+#email, #subject, #message, #fname, #lname {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+#fname {
+  margin-right: 1rem;
+}
+.contact-content-con .right-contact .input-control input:focus, textarea:focus {
+  background-color: var(--color-grey-3);
+}
+
+.contact-content-con .right-contact button {
+  background-color: inherit;
+  border: inherit;
+  color: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}

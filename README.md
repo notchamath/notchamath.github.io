@@ -7,6 +7,8 @@ Inspired by [Tunis by celtano](https://themeforest.net/item/tunis-personal-portf
 
 Information on how I deployed the website on Github Pages can be found [here](https://dreamsfromcode.com/how-to-set-up-a-live-website-using-github-pages-for-free-step-by-step-guide/66/).
 
+### [Visit the Live Site](https://chamathcodes.com/) 👈
+
 
 ## Technologies Used
 `JavaScript` `HTML5` `CSS3` `CSS Grid` `Flexbox` `GIT` `Github Pages`

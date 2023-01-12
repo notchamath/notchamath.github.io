@@ -33,8 +33,8 @@
 }
 
 /* projects image styles */
-.projects .portfolio-item .proj-image a {
-  width: 100%;
+.projects .portfolio-item .proj-image {
+  position: relative;
 }
 .projects .portfolio-item img{
   width: 100%;
@@ -42,6 +42,20 @@
   object-fit: cover;
   border-radius: 15px;
   cursor: pointer;
+
+}
+
+/* temp */
+.projects .portfolio-item:nth-of-type(4) img{
+  filter: blur(10px);
+}
+.projects .portfolio-item .proj-image .coming-soon{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 1.2rem;
+  transform: translate(-50%, -50%);
+  color: whitesmoke;
 }
 
 /* project info styles */

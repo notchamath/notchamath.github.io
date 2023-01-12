@@ -291,6 +291,16 @@
   .projects .portfolio-item{
     width: 250px;
   }
+  /* temp */
+  .projects .portfolio-item:first-of-type .proj-info h3{
+    font-size: 18px;
+  }
+  .projects .portfolio-item{
+    height: 510px;
+  }
+  .projects .portfolio-item .proj-image .coming-soon{
+    font-size: 1rem;
+  }
 
   /* CONTACT SECTION */
   .contact-content-con {

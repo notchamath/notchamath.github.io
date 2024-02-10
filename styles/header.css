@@ -1,6 +1,7 @@
 /* header section styles */
 .header-content {
   display: grid;
+  position: relative;
   grid-template-columns: 1fr 1fr;
   min-height: 100vh;
 }

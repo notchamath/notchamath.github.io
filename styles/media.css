@@ -134,6 +134,9 @@
     grid-template-columns: 1fr;
     margin-right: 7%;
   }
+  .header-content hr{
+    transform: translateX(-50%);
+  }
   .header-content .left-header {
     top: 10%;
   }

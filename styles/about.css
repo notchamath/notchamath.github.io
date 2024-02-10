@@ -127,8 +127,13 @@
   font-size: 1.4rem;
   text-transform: uppercase;
 }
+
+.stat-title span{
+  color: var(--color-secondary);
+}
+
 /* dividing line styles */
-.stat-title::before {
+/* .about-stats::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -137,7 +142,7 @@
   width: 40%;
   height: 1px;
   background-color: var(--color-grey-5);
-}
+} */
 
 /* list of skills styles */
 .about-stats .skills-list {

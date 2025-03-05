@@ -164,10 +164,14 @@
 .about-stats .skills-list .skill i {
   font-size: 6rem;
   color: var(--color-grey-3);
+  height: 100px;
+  width: 100px;
 }
 .about-stats .skills-list .skill img {
   width: 80px;
   height: 96px;
   object-fit: contain;
+  height: 100px;
+  width: 100px;
 }
 

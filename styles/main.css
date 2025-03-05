@@ -24,6 +24,7 @@
   --box-shadow-1: 0 3px 15px rgba(0,0,0,0.3);
   --br-sm-2: 6px;
   --trans-1: all .4s ease-in-out;
+  --porfolio-item-height: 670px;
 }
 
 /* change variable values for light mode */

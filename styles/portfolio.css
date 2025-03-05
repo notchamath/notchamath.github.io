@@ -23,7 +23,7 @@
   position: relative;
   overflow: hidden;
   width: 400px;
-  height: 670px;
+  height: var(--porfolio-item-height);
   border-radius: 15px;
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
@@ -66,6 +66,7 @@
 }
 /* project description */
 .projects .portfolio-item .proj-info p {
+  max-height: calc(var(--porfolio-item-height)/2.3);
   line-height: 2rem;
 }
 /* description highlights styles */
@@ -84,9 +85,14 @@
   left: 50%;
   transform: translateX(-50%);
   gap: 1rem;
+  height: calc(var(--porfolio-item-height)/20);
 }
 /* project buttons styles */
 .projects .portfolio-item .proj-info .proj-btns a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
   flex-shrink: 0;
   padding: 1px 10px;
   border-radius: 35px;

@@ -97,10 +97,11 @@
     right: 5%;
   }
   .projects .portfolio-item .proj-info h3 {
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
   }
   .projects .portfolio-item .proj-info p {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     line-height: 1.3rem;
   }
   .projects .portfolio-item .proj-info .proj-btns {
@@ -294,18 +295,12 @@
   .projects .portfolio-item{
     width: 250px;
   }
-  /* temp */
-  .projects .portfolio-item{
-    height: 510px;
+
+  .projects .portfolio-item .proj-info h3 {
+    font-size: 1rem;
   }
-  .projects .portfolio-item:nth-of-type(1){
-    height: 530px;
-  }
-  .projects .portfolio-item:nth-of-type(2) .proj-info h3{
-    font-size: 18px;
-  }
-  .projects .portfolio-item:nth-of-type(1) .proj-info h3{
-    font-size: 18px;
+  .projects .portfolio-item .proj-info p {
+    font-size: 0.8rem;
   }
 
   /* CONTACT SECTION */

@@ -8,6 +8,7 @@
 /* left contact section styles */
 .contact-content-con .left-contact {
   position: relative;
+  text-align: center;
   width: 35%;
 }
 
@@ -21,79 +22,4 @@
 .contact-content-con .left-contact p {
   margin: 1rem 0;
   line-height: 2rem;
-}
-
-/* contact items */
-.contact-content-con .left-contact .contact-info .contact-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.contact-content-con .left-contact .contact-info .contact-item .icon {
-  display: grid;
-  grid-template-columns: 30px 1fr;
-  align-items: center;
-}
-.contact-content-con .left-contact .contact-info .contact-item p {
-  margin: 0.3rem 0;
-  padding: 0;
-}
-
-
-/* right contact section styles */
-/* its a form */
-.contact-content-con .right-contact {
-  margin-left: 3rem;
-}
-
-/* honeypot is invisible */
-.contact-content-con .right-contact .catcher {
-  position: absolute;
-  opacity: 0;
-}
-
-/* input controls */
-.contact-content-con .right-contact .input-control {
-  display: flex;
-  margin: 1rem 0;
-  width: 100%;
-}
-
-/* input and textarea styles */
-.contact-content-con .right-contact .input-control input, .contact-content-con .right-contact .input-control textarea {
-  border-radius: 30px;
-  font-weight: inherit;
-  font-size: 1rem;
-  padding: 0.8rem 1.1rem;
-  outline: none;
-  border: none;
-  color: var(--color-white);
-  background-color: var(--color-grey-5);
-  resize: none;
-}
-.contact-content-con .right-contact .input-control textarea {
-  font-family: "Poppins", sans-serif;
-}
-.contact-content-con .right-contact .input-control input:focus, .contact-content-con .right-contact .input-control textarea:focus {
-  background-color: var(--color-grey-3);
-}
-
-/* let items grow and shrink with screen size*/
-#email, #subject, #message, #fname, #lname {
-  flex-grow: 1;
-  flex-shrink: 1;
-}
-
-/* fname and lname are on same line so need space between them */
-#fname {
-  margin-right: 1rem;
-}
-
-/* submit button */
-.contact-content-con .right-contact button {
-  background-color: inherit;
-  border: inherit;
-  color: inherit;
-  font-size: inherit;
-  cursor: pointer;
 }
